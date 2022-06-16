@@ -18,15 +18,21 @@ header {
     background: #132235;
     height: 90px;
     font-size: 18px;
-    
+
 }
+
+.mobile {
+
+    display: none;
+}
+
 
 .logo {
 
     width: 150px;
     margin: 25px;
-  
-    
+
+
 }
 
 .menu-cabecalho {
@@ -34,7 +40,7 @@ header {
     color: #fff;
     margin: 5px;
     text-decoration: none;
-    
+
 
 }
 
@@ -80,31 +86,37 @@ header {
 #saiba-mais a:hover {
     border: white;
     color: #132235;
-  
+
+
 }
+
 #saiba-mais a {
 
     text-decoration: none;
-    color:  #132235;
+    color: #132235;
     font-size: 15px;
     background: #6DDAD3;
     padding: 8px;
     border-radius: 20px;
     border: 1.5px solid #fff;
-    
+
 }
 
 /* Codigo bloco quem somos */
+.fundo {
+
+    background: #DCE9ED;
+}
+
 .quem-somos {
 
     display: flex;
     justify-content: space-evenly;
-    background: #DCE9ED;
+
     color: #132235;
-    border-bottom: 10px solid rgba(35, 43, 42, 0.5);
     padding: 100px;
     line-height: 1.6;
-   
+
 
 }
 
@@ -133,6 +145,84 @@ header {
 
 }
 
+@media screen and (max-width: 375px) {
 
+    .fundo {
+
+        background: #DCE9ED;
+        height: 500px;
+    }
+
+    .mobile {
+        display: flex;
+        
+    }
+
+    .teste {
+
+        display: flex;
+        width: 375px;
+        justify-content: space-between;
+
+    }
+
+    .menu-cabecalho {
+        display: none;
+
+    }
+
+    .inicio-do-site {
+
+        background: linear-gradient(87.45deg, #132235 37.51%, #18365B 150.31%);
+        border-top: none;
+        height: 400px;
+    }
+
+    .texto {
+        padding: 20px 0 0 22px;
+    }
+
+    .quem-somos {
+        padding: 20px;
+        flex-direction: column;
+
+    }
+
+    .titulo-quem-somos {
+        text-align: left;
+        font-size: 45px;
+
+    }
+
+    .texto-quem-somos {
+        font-size: 18px;
+
+    }
+
+    .quem-somos img {
+        display: none;
+
+
+    }
+
+    #text-1 {
+        width: 250px;
+
+
+    }
+
+    #titulo-2 {
+
+        width: 340px;
+        font-size: 32px;
+    }
+
+    .quem-somos-texto {
+
+        width: 350px;
+    }
+
+
+}
 
 /* Aqui termina o codigo da Cris */
