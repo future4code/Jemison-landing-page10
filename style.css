@@ -2,357 +2,227 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
 }
 
 body {
-    max-width: 1280px;
+    width: 1280px;
     margin: auto;
 }
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
 
-.mobile-menu img {
+/* Codigo do Header */
+header {
+    display: grid;
+    grid-template-columns: 50% 12.5% 12.5% 12.5% 12.5%;
+    align-items: center;
+    grid-template-rows: 90px;
+    background: #132235;
+    height: 90px;
+    font-size: 18px;
+
+}
+
+.mobile {
+
     display: none;
 }
 
-.fundo-claro {
-    height: 960px;
-    background-color: #DCE9ED;
+
+.logo {
+
+    width: 150px;
+    margin: 25px;
+
+
 }
 
-.separador {
-    width: 1280px;
-    height: 7px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), #132235, rgba(0, 0, 0, 0.2));
-    background-size: auto;
-}
+.menu-cabecalho {
 
-.nossos-servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nossos-servicos-titulo h2 {
-    color: #132235;
-    font-size: 7em;
-    padding: 40px 0 40px 0;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-}
-
-.kitnets-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
-
-.kitnet-container img {
-    width: 70%;
-}
-
-.kitnet-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-}
-
-.kitnet-content h3 {
-    font-size: 3.6em;
-    color: #132235;
-    font-weight: 800;
-}
-
-.kitnet-content p {
-    text-align: center;
-    width: 470px;
-    height: 102px;
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 1.25;
-    padding-top: 20px;
-}
-
-.republica-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.republica-container img {
-    width: 60%;
-}
-
-.republica-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.republica-content h3 {
-    font-size: 3.6em;
-    color: #132235;
-    font-weight: 800;
-}
-
-.republica-content p {
-    text-align: center;
-    width: 470px;
-    height: 102px;
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 1.25;
-    padding-top: 20px;
-}
-
-.testimonials-fundo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url(img/Testimonial-foto.png);
-    height: 755px;
-}
-
-.fundo-botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonials-content {
-    display: flex;
-    gap: 60px;
-    padding-bottom: 65px;
-}
-
-#texto-test-sarah {
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 50px; */
-}
-
-#texto-test-john {
-    display: flex;
-    flex-direction: column;
-    margin-top: 120px;
-}
-
-.primeiro-testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 210px;
-    height: 550px;
-    text-align: center;
-}
-
-.segundo-testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 550px;
-    text-align: center;
-}
-
-.testimonial-nome {
     color: #fff;
-    font-size: 1.8em;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px black;
-}
-
-.foto {
-    width: 110px;
-}
-
-.estrela {
-    padding-top: 10px;
-    width: 60px;
-}
-
-.cidade {
-    padding: 3px;
-    color: rgb(218, 218, 218);
-    font-size: 1.2em;
-}
-
-.texto {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-.botao-espaco {
-    display: flex;
-    padding-bottom: 8px;
-}
-
-.veja-mais {
-    width: 50px;
-    height: 50px;
-    border: 3px solid #6DDAd3;
-    border-radius: 50%;
-}
-
-.veja-mais p {
-    font-size: 1.4em;
-    width: 25px;
-    color: #fff;
-    padding: 7px 0 0 10px;
-}
-
-.veja-mais a {
+    margin: 5px;
     text-decoration: none;
+
+
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
 
-@media screen and (max-width: 400px) {
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Mobile -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
-
-.fundo-claro {
-    height: 785px;
+/* Codigo do bloco FOTO  */
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 85px;
 }
-    
-.separador {
-        width: 380px;
-        height: 4px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), #132235, rgba(0, 0, 0, 0.2));
-        background-size: auto;
+
+.inicio-do-site {
+    background-image: url(img/Foto_Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 365px;
+    color: #fff;
+    right: 365px;
+    border-top: 3px solid rgba(109, 218, 211, 0.5);
+    border-bottom: 10px solid rgba(109, 218, 211, 0.5);
+
+}
+
+#titulo {
+
+    width: 1000px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+#texto-menor {
+
+    width: 400px;
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Codigo do botão  */
+#saiba-mais a:hover {
+    border: white;
+    color: #132235;
+
+
+}
+
+#saiba-mais a {
+
+    text-decoration: none;
+    color: #132235;
+    font-size: 15px;
+    background: #6DDAD3;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1.5px solid #fff;
+
+}
+
+/* Codigo bloco quem somos */
+.fundo {
+
+    background: #DCE9ED;
+}
+
+.quem-somos {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: #132235;
+    padding: 100px;
+    line-height: 1.6;
+
+
+}
+
+/* Configuração de tamanho bloco de texto */
+
+.quem-somos-texto {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.titulo-quem-somos {
+    font-size: 80px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 5px;
+
+}
+
+.texto-quem-somos {
+
+    font-size: 25px;
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .fundo {
+
+        background: #DCE9ED;
+        height: 500px;
     }
 
-    .nossos-servicos-titulo h2 {
-        font-size: 3.4em;
-    }
-
-    .kitnets-container {
+    .mobile {
         display: flex;
-        flex-direction: column;
-        gap: 0;
+        
     }
 
-    .kitnet-content {
+    .teste {
+
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .kitnets-container img {
-        width: 245px;
-        order: 1;
-    }
-
-    .kitnet-content h3 {
-        font-size: 2.6em;
-    }
-
-    .kitnet-content p {
-        font-size: 1.6em;
-        order: 0;
-        width: 300px;
-    }
-
-    .republica-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .republica-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 25px;
-    }
-
-    .republica-container img {
-        width: 245px;
-        order: 1;
-    }
-
-    .republica-content h3 {
-        font-size: 2.6em
-    }
-
-    .republica-content p {
-        font-size: 1.6em;
-        order: 0;
-        width: 300px;
-    }
-
-    .testimonials-fundo {
-        background: #132235;
         width: 375px;
-        height: 300px;
-        background-image: url(img/Quadrado.svg);
-        background-repeat: no-repeat;
-        background-position: center top;
+        justify-content: space-between;
+
     }
 
-    .testimonials-content {
-        gap: 30px;
-        padding-bottom: 0;
+    .menu-cabecalho {
+        display: none;
+
     }
 
-    .primeiro-testimonial {
-        width: 100px;
-        height: 255px;
-        text-align: center;
-    }
+    .inicio-do-site {
 
-    .segundo-testimonial {
-        width: 110px;
-        height: 255px;
-        text-align: center;
-    }
-
-    .foto {
-        width: 57px;
-    }
-
-    .estrela {
-        width: 40px;
-    }
-
-    .testimonial-nome {
-        font-size: 1em;
-    }
-
-    .cidade {
-        font-size: 0.8em;
+        background: linear-gradient(87.45deg, #132235 37.51%, #18365B 150.31%);
+        border-top: none;
+        height: 400px;
     }
 
     .texto {
-        font-size: 0.85em;
+        padding: 20px 0 0 22px;
     }
 
-    .veja-mais {
-        width: 25px;
-        height: 25px;
-        border: 1px solid #6DDAd3;
-        border-radius: 50%;
+    .quem-somos {
+        padding: 20px;
+        flex-direction: column;
+
     }
 
-    .veja-mais p {
-        font-size: 0.7em;
-        width: 15px;
-        color: #fff;
-        padding: 3px 0 0 5px;
+    .titulo-quem-somos {
+        text-align: left;
+        font-size: 45px;
+
     }
 
-    #texto-test-john {
-        margin-top: 55px;
+    .texto-quem-somos {
+        font-size: 18px;
+
     }
 
-    #texto-test-sarah {
-        margin-top: 25px;
-    }    
+    .quem-somos img {
+        display: none;
+
+
+    }
+
+    #text-1 {
+        width: 250px;
+
+
+    }
+
+    #titulo-2 {
+
+        width: 340px;
+        font-size: 32px;
+    }
+
+    .quem-somos-texto {
+
+        width: 350px;
+    }
+
+
 }
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Mobile -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Aqui termina o codigo da Cris */
