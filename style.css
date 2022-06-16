@@ -5,10 +5,122 @@
     font-size: 10px;
 }
 
-body {
-    max-width: 1280px;
-    margin: auto;
+header {
+    display: grid;
+    grid-template-columns: 40% 14% 14% 16% 14%;
+    align-items: center;
+    grid-template-rows: 90px;
+    background: #132235;
+    height: 90px;
 }
+
+.mobile {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    margin: 25px;
+}
+
+.menu-cabecalho {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Codigo do bloco FOTO  */
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 100px;
+}
+
+.inicio-do-site {
+    background-image: url(img/Foto_Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 365px;
+    color: #fff;
+    right: 365px;
+    border-top: 3px solid rgba(109, 218, 211, 0.5);
+    border-bottom: 10px solid rgba(109, 218, 211, 0.5);
+}
+
+#titulo {
+    width: 1000px;
+    padding-bottom: 20px;
+}
+
+#titulo-2 {
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+#texto-menor {
+    width: 600px;
+    padding-bottom: 50px;
+}
+
+#text-1 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Codigo do botão  */
+#saiba-mais a:hover {
+    border: white;
+    color: #132235;
+}
+
+#saiba-mais a {
+    text-decoration: none;
+    color: #132235;
+    font-size: 1.5em;
+    font-weight: 600;
+    background: #6DDAD3;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1.5px solid #fff;
+}
+
+/* Codigo bloco quem somos */
+.fundo {
+    background: #DCE9ED;
+}
+
+.quem-somos {
+    display: flex;
+    justify-content: space-evenly;
+    color: #132235;
+    padding: 80px;
+    line-height: 1.6;
+}
+
+/* Configuração de tamanho bloco de texto */
+
+.quem-somos-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-quem-somos {
+    font-size: 8.0em;
+    padding-bottom: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 5px;
+}
+
+.texto-quem-somos {
+    width: 680px;
+    font-size: 2.5em;
+    padding-right: 30px;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
 
 .mobile-menu img {
@@ -125,20 +237,20 @@ body {
 
 .testimonials-content {
     display: flex;
-    gap: 60px;
+    gap: 30px;
     padding-bottom: 65px;
 }
 
 #texto-test-sarah {
     display: flex;
     flex-direction: column;
-    /* margin-top: 50px; */
+    margin-top: -11px;
 }
 
 #texto-test-john {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 .primeiro-testimonial {
@@ -146,8 +258,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 210px;
-    height: 550px;
+    width: 240px;
+    height: 530px;
     text-align: center;
 }
 
@@ -156,7 +268,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 260px;
     height: 550px;
     text-align: center;
 }
@@ -183,10 +295,11 @@ body {
     font-size: 1.2em;
 }
 
-.texto {
+.texto_testimonial {
     color: #fff;
     font-size: 2em;
     font-weight: 400;
+    padding: 50px 0 0 25px;
 }
 
 .botao-espaco {
@@ -214,14 +327,190 @@ body {
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
 
-@media screen and (max-width: 400px) {
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Mobile -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
-
-.fundo-claro {
-    height: 785px;
+.linha-superior {
+    height: 8px;
+    background-color: #6DDAD3;
 }
-    
-.separador {
+
+footer {
+    background-color: #132235;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px 60px;
+    align-items: flex-end;
+    font-size: 2em;
+}
+
+#copy {
+    background-color: #132235;
+    color: #FFFFFF;
+    align-items: flex-end;
+}
+
+.contato {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    background-color: #DCE9ED;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controle-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    color: #132235;
+    margin-left: 40px;
+}
+
+.texto-contato h6 {
+    letter-spacing: 2px;
+    font-size: 0.5em;
+    margin: 10px 0 0 5px;
+}
+
+.texto-contato {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 4em;
+    color: #132235;
+}
+
+.midias-sociais {
+    justify-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.midias-sociais-mobile {
+    justify-items: center;
+    text-align: center;
+    margin: 10px;
+    display: none;
+}
+
+.midias {
+    text-align: center;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    color: #132235;
+    display: block;
+    font-size: 1.3em;
+}
+
+.icones a {
+    text-align: center;
+    padding: 6px;
+}
+
+form {
+    padding: 32px;
+    border-radius: 5px;
+    text-align: start;
+    min-width: 25%;
+}
+
+form div+div {
+    margin-top: 32px;
+    border-radius: 10px;
+}
+
+form input {
+    width: 200px;
+    padding: 3px 6px;
+    height: 20px;
+    border-radius: 4px;
+    box-shadow: 4px rgb(194, 187, 187);
+}
+
+.endereco {
+    margin-top: 32px;
+    border-radius: 4px;
+}
+
+.botao a {
+    background-color: #132235;
+    border-radius: 4px;
+    border: 2px solid #132235;
+    padding: 4px 6px;
+    color: #FFFFFF;
+    box-shadow: 4px rgb(194, 187, 187);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    .fundo {
+        background: #DCE9ED;
+        height: 450px;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .teste {
+        display: flex;
+        width: 375px;
+        justify-content: space-between;
+    }
+
+    .menu-cabecalho {
+        display: none;
+    }
+
+    .inicio-do-site {
+        background: linear-gradient(87.45deg, #132235 37.51%, #18365B 150.31%);
+        border-top: none;
+        height: 500px;
+    }
+
+    .texto {
+        padding: 20px 0 0 22px;
+    }
+
+    .quem-somos {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .titulo-quem-somos {
+        text-align: left;
+        font-size: 4.5em;
+    }
+
+    .texto-quem-somos {
+        font-size: 1.8em;
+        width: 350px;
+    }
+
+    .quem-somos img {
+        display: none;
+    }
+
+    #text-1 {
+        width: 250px;
+    }
+
+    #titulo-2 {
+        width: 340px;
+        font-size: 3.2em;
+    }
+
+    .quem-somos-texto {
+        width: 350px;
+    }
+
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Mobile -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
+
+    .fundo-claro {
+        height: 785px;
+    }
+
+    .separador {
         width: 380px;
         height: 4px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), #132235, rgba(0, 0, 0, 0.2));
@@ -290,7 +579,7 @@ body {
     .testimonials-fundo {
         background: #132235;
         width: 375px;
-        height: 300px;
+        height: 340px;
         background-image: url(img/Quadrado.svg);
         background-repeat: no-repeat;
         background-position: center top;
@@ -298,23 +587,23 @@ body {
 
     .testimonials-content {
         gap: 30px;
-        padding-bottom: 0;
+        padding: 0;
     }
 
     .primeiro-testimonial {
-        width: 100px;
-        height: 255px;
+        width: 120px;
+        height: 300px;
         text-align: center;
     }
 
     .segundo-testimonial {
-        width: 110px;
-        height: 255px;
+        width: 100px;
+        height: 300px;
         text-align: center;
     }
 
     .foto {
-        width: 57px;
+        width: 45px;
     }
 
     .estrela {
@@ -329,8 +618,9 @@ body {
         font-size: 0.8em;
     }
 
-    .texto {
+    .texto_testimonial {
         font-size: 0.85em;
+        padding: 20px 0 0 0px;
     }
 
     .veja-mais {
@@ -348,11 +638,52 @@ body {
     }
 
     #texto-test-john {
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     #texto-test-sarah {
-        margin-top: 25px;
-    }    
-}
+        margin-top: 15px;
+    }
+
     /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Mobile -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
+    .contato {
+        font-size: 0.8em;
+        background-color: #DCE9ED;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contato h6 {
+        font-size: 0.4em;
+    }
+
+    .controle-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 360px;
+        color: #132235;
+        margin-left: 12px;
+    }
+
+    form {
+        margin: 0;
+        padding: 25px;
+        border-radius: 5px;
+        text-align: start;
+    }
+
+    .midias-sociais {
+        display: none;
+    }
+
+    .midias-sociais-mobile {
+        display: block;
+    }
+
+    .midias-sociais-mobile h6 {
+        font-size: 1.2em;
+    }
+}
