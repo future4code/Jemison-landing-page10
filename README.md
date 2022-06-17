@@ -4,7 +4,7 @@ Landing page de uma empresa especializada em moradias pensadas para estudantes u
 
 # Surge Link
 
-
+https://tense-teeth.surge.sh
 
 ## Documentação de cores
 
