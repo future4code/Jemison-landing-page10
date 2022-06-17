@@ -5,6 +5,15 @@
     font-size: 10px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 40% 14% 14% 16% 14%;
@@ -118,7 +127,6 @@ header {
 .texto-quem-somos {
     width: 680px;
     font-size: 2.5em;
-    padding-right: 30px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main -- feito por Juan Pedroza >>>>>>>>>>>>>>>>>>>>>>> */
@@ -168,7 +176,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 375px;
 }
 
 .kitnet-content h3 {
@@ -443,9 +451,24 @@ form input {
 
 @media screen and (max-width: 375px) {
 
+    body {
+        width: 375px;
+        margin: 0 auto;
+    }
+
     .fundo {
         background: #DCE9ED;
         height: 450px;
+    }
+
+    #titulo {
+        width: 350px;
+        padding-bottom: 20px;
+    }
+
+    #texto-menor {
+        width: 350px;
+        padding-bottom: 50px;
     }
 
     .mobile {
@@ -511,7 +534,7 @@ form input {
     }
 
     .separador {
-        width: 380px;
+        width: 375px;
         height: 4px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), #132235, rgba(0, 0, 0, 0.2));
         background-size: auto;
